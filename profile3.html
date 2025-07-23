@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manikanta Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: whitesmoke;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2c3e50;
+      color: lightblue;
+      padding: 15px 30px;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: lightsalmon;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: #1abc9c;
+    }
+
+    .about {
+      display: flex;
+      padding: 40px;
+      background-color: white;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .about img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 40px;
+    }
+
+    .about-text {
+      max-width: 500px;
+    }
+
+    .about-text h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .about-text p {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    .box-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .box {
+      background-color: whitesmoke;
+      padding: 15px 20px;
+      border-radius: 10px;
+      min-width: 120px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      color: white;
+    }
+
+    .skill, .edu, .intern, .project {
+      background-color: #2c3e50;
+    }
+
+    /* NEW EDUCATION STYLING */
+    .education-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .education-item {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .education-item img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .education-item h3 {
+      color: #2c3e50;
+      margin: 10px 0 5px;
+    }
+
+    .education-item p {
+      color: #444;
+      margin: 0;
+    }
+
+    /* Projects section updated styles */
+    #projects {
+      text-align: left;  /* Align content left */
+      padding-left: 60px; /* Space from left edge */
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    #projects .project-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 600px;
+    }
+    .socialmedia{
+        display: flex;
+
+
+    }
+    .socialmedia a img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin: 10px;
+    }
+
+    .project-btn {
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 40px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+      text-align: left;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .project-btn:hover {
+      background-color: #1abc9c;
+    }
+
+    /* Script box style below Home Booking */
+    textarea.script-box {
+      width: 100%;
+      max-width: 600px;
+      height: 120px;
+      margin: 10px 0 20px 0;
+      padding: 12px;
+      font-size: 16px;
+      line-height: 1.5;
+      border-radius: 12px;
+      border: 2px solid #2c3e50;
+      background-color: #f5f5f5;
+      color: #333;
+      font-family: Arial, sans-serif;
+      overflow-y: auto;
+      resize: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">manikanta</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="#help">Help</a>
+      <a href="#certificates">Award</a>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <img src="image.jpg" alt="manikanta Photo" />
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>I am manikanta, a Computer Science student with a passion for web development and application building.</p>
+      <p>I enjoy working with technologies like HTML, CSS, Python, and Flutter.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <h2>Skills</h2>
+    <div class="box-container">
+      <div class="box skill">Python</div>
+      <div class="box skill">C</div>
+      <div class="box skill">Java</div>
+      <div class="box skill">HTML</div>
+      <div class="box skill">JavaScript</div>
+      <div class="box skill">CSS</div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section" id="education">
+    <h2>Education</h2>
+    <div class="education-container">
+      <div class="education-item">
+        <img src="download.jpg" alt="KITS Logo">
+        <h3>KKR & KSR Institute of Technology</h3>
+        <p>B. Tech | Branch: CSE | Year: 3rd</p>
+      </div>
+      <div class="education-item">
+        <img src="inter.jpeg" alt="Sarada Logo">
+        <h3>Sarada Junior College</h3>
+        <p>Inter Branch: MPC</p>
+      </div>
+      <div class="education-item">
+        <img src="ssc.jpeg" alt="School Logo">
+        <h3>Chigurupati Sri Krishnaveni School</h3>
+        <p>SSC Marks: 495</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Internships -->
+  <section class="section" id="internships">
+    <h2>Internships</h2>
+    <div class="box-container">
+      <div class="box intern">BLACK BUCKS</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <button class="project-btn" id="homeBookingBtn">Home Booking 
+         <textarea class="script-box" readonly>
+Welcome! It is used to search for houses more easily and also you can see the required information you need can see in ur mobile.
+      </textarea>
+      </button>
+
+      <!-- Script box below Home Booking -->
+     
+
+      <button class="project-btn">E-Waste Management
+         <textarea class="script-box" readonly>
+Our project is used to store E-waste we will notify you that wheather there is e waste godown in our area nor not all electiric and plastic are taken .
+      </textarea>
+      </button>
+      </button>
+      <button class="project-btn">Upcoming AI Project
+        <textarea class="script-box" readonly>
+New AI project is coming the idea is useful to all the students.
+      </textarea>
+      </button>
+    </div>
+  </section>
+
+  <!-- Awards -->
+  <section class="section" id="certificates">
+    <h2>Awards</h2>
+    <div class="box-container">
+      <div class="box project">Script Kiddie Level in Hacking</div>
+      <div class="box project">Python Certificates</div>
+    </div>
+  </section>
+
+  <!-- Certificate Image -->
+  <section class="section">
+    <h2>Certificate Image</h2>
+    <div class="box-container">
+      <img src="certificate.jpg" height="200px" alt="Certificate">
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <h2>social media
+    </h2>
+    <div class="box-container">
+     
+      <div class="socialmedia">
+        <a href="https://www.linkedin.com/in/raja-manikanta-30a943306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+            <img src="linked.jpeg" alt="">
+        </a>
+        <a href="https://github.com/manikanta-mern7">
+            <img src="github.jpeg" alt="">
+        </a>
+        <a href="https://www.instagram.com/_.raja_.manikanta._?igsh=YWprbWF4Y3Y0ZHU5">
+            <img src="insta.jpeg" alt="">
+        </a>
+        <a href="https://leetcode.com/u/RajaManikanta/">
+            <img src="leat.jpeg" alt="">
+        </a>
+      </div>
+  </section>
+    <section class="section" id="contact">
+    <h2>Contact Me</h2>
+    <div class="box-container">
+      <div class="box">
+        📧 Email: <a href="mailto:rajamanikanta1415@gmail.com">rajamanikanta1415@gmail.com</a>
+      </div>
+      <div class="box">
+        📞 Phone: <a href="tel:9059476799">9059476799</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
